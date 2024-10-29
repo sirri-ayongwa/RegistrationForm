@@ -1,0 +1,179 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background: linear-gradient(to right, #7b1fa2, #9575cd);
+  color: white;
+}
+
+.App {
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 20%;
+  margin-left: 20px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  width: 15%;
+  background-color: #512da8;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #673ab7;
+}
+
+.user-list-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-list li {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.success-message {
+  margin-top: 20px;
+  background-color: #c8e6c9;
+  padding: 10px;
+  border-radius: 5px;
+  color: #2e7d32;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.view-users-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  width: 15%;
+  padding: 10px 20px;
+  background-color: #512da8;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-users-btn:hover {
+  background-color: #673ab7;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .App {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  input {
+    width: 40%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .submit-btn, .view-users-btn {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  .submit-btn, .view-users-btn {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .submit-btn, .view-users-btn {
+    width: 100%;
+  }
+}
+
+/* CSS Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
